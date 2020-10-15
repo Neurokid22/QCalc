@@ -16,20 +16,16 @@ class CalculatorWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
     def __init__(self):
         super().__init__()
-
         self.ui = Ui_MainWindow()
-      
-        
         self.setupUi(self)
-
         self.setWindowFlags(QtCore.Qt.WindowFlags(QtCore.Qt.FramelessWindowHint | QtCore.Qt.WindowStaysOnTopHint))
         self.setAttribute(QtCore.Qt.WA_TranslucentBackground)
         self.setWindowOpacity(0.95)
 
-        # sizegrip = QSizeGrip(self)
-        # # sizegrip.setVisible(True)
-        # self.new_size = self.Container_layout.addWidget(sizegrip)    
-        # self.setLayout(self.Container_layout)
+        sizegrip = QSizeGrip(self)
+        # sizegrip.setVisible(True)
+        self.new_size = self.Container_layout.addWidget(sizegrip)    
+        self.setLayout(self.Container_layout)
         self.show()
    
     
