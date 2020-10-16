@@ -15,7 +15,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.setWindowModality(QtCore.Qt.WindowModal)
-        MainWindow.resize(298, 541)
+        MainWindow.resize(416, 541)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -226,19 +226,18 @@ class Ui_MainWindow(object):
         self.KeyPad.setFrameShadow(QtWidgets.QFrame.Raised)
         self.KeyPad.setObjectName("KeyPad")
         self.gridLayout = QtWidgets.QGridLayout(self.KeyPad)
-        self.gridLayout.setContentsMargins(-1, 0, -1, 12)
-        self.gridLayout.setSpacing(25)
+        self.gridLayout.setContentsMargins(12, -1, -1, 12)
         self.gridLayout.setObjectName("gridLayout")
-        self.key_9 = QtWidgets.QPushButton(self.KeyPad)
+        self.key_2 = QtWidgets.QPushButton(self.KeyPad)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.key_9.sizePolicy().hasHeightForWidth())
-        self.key_9.setSizePolicy(sizePolicy)
+        sizePolicy.setHeightForWidth(self.key_2.sizePolicy().hasHeightForWidth())
+        self.key_2.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
         font.setPointSize(16)
-        self.key_9.setFont(font)
-        self.key_9.setStyleSheet("QPushButton{\n"
+        self.key_2.setFont(font)
+        self.key_2.setStyleSheet("QPushButton{\n"
 "    background-color:rgb(90, 172, 146);\n"
 "    color: rgb(85, 85, 85);\n"
 "    border-color: black;\n"
@@ -248,8 +247,8 @@ class Ui_MainWindow(object):
 "QPushButton:hover {\n"
 "    background-color: rgb(107, 190, 160);\n"
 "}")
-        self.key_9.setObjectName("key_9")
-        self.gridLayout.addWidget(self.key_9, 1, 0, 1, 1)
+        self.key_2.setObjectName("key_2")
+        self.gridLayout.addWidget(self.key_2, 3, 1, 1, 1)
         self.key_divide = QtWidgets.QPushButton(self.KeyPad)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
@@ -272,114 +271,6 @@ class Ui_MainWindow(object):
 "}")
         self.key_divide.setObjectName("key_divide")
         self.gridLayout.addWidget(self.key_divide, 0, 3, 1, 1)
-        self.key_6 = QtWidgets.QPushButton(self.KeyPad)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.key_6.sizePolicy().hasHeightForWidth())
-        self.key_6.setSizePolicy(sizePolicy)
-        font = QtGui.QFont()
-        font.setPointSize(16)
-        self.key_6.setFont(font)
-        self.key_6.setStyleSheet("QPushButton{\n"
-"    background-color:rgb(90, 172, 146);\n"
-"    color: rgb(85, 85, 85);\n"
-"    border-color: black;\n"
-"    border-radius:15px;\n"
-"}\n"
-"\n"
-"QPushButton:hover {\n"
-"    background-color: rgb(107, 190, 160);\n"
-"}")
-        self.key_6.setObjectName("key_6")
-        self.gridLayout.addWidget(self.key_6, 2, 0, 1, 1)
-        self.key_subtract = QtWidgets.QPushButton(self.KeyPad)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.key_subtract.sizePolicy().hasHeightForWidth())
-        self.key_subtract.setSizePolicy(sizePolicy)
-        font = QtGui.QFont()
-        font.setPointSize(20)
-        self.key_subtract.setFont(font)
-        self.key_subtract.setStyleSheet("QPushButton{\n"
-"    background-color:rgb(191, 191, 191);\n"
-"    color: rgb(85, 85, 85);\n"
-"    border-width:1px;\n"
-"    border-color: black;\n"
-"    border-radius:15px;\n"
-"}\n"
-"\n"
-"QPushButton:hover {\n"
-"    background-color:rgb(219, 219, 219);\n"
-"}")
-        self.key_subtract.setObjectName("key_subtract")
-        self.gridLayout.addWidget(self.key_subtract, 3, 3, 1, 1)
-        self.key_negativeToggle = QtWidgets.QPushButton(self.KeyPad)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.key_negativeToggle.sizePolicy().hasHeightForWidth())
-        self.key_negativeToggle.setSizePolicy(sizePolicy)
-        font = QtGui.QFont()
-        font.setPointSize(16)
-        self.key_negativeToggle.setFont(font)
-        self.key_negativeToggle.setStyleSheet("QPushButton{\n"
-"    background-color:rgb(191, 191, 191);\n"
-"    color: rgb(85, 85, 85);\n"
-"    border-width:1px;\n"
-"    border-color: black;\n"
-"    border-radius:15px;\n"
-"}\n"
-"\n"
-"QPushButton:hover {\n"
-"    background-color:rgb(219, 219, 219);\n"
-"}")
-        self.key_negativeToggle.setObjectName("key_negativeToggle")
-        self.gridLayout.addWidget(self.key_negativeToggle, 0, 1, 1, 1)
-        self.key_4 = QtWidgets.QPushButton(self.KeyPad)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.key_4.sizePolicy().hasHeightForWidth())
-        self.key_4.setSizePolicy(sizePolicy)
-        font = QtGui.QFont()
-        font.setPointSize(16)
-        self.key_4.setFont(font)
-        self.key_4.setStyleSheet("QPushButton{\n"
-"    background-color:rgb(90, 172, 146);\n"
-"    color: rgb(85, 85, 85);\n"
-"    border-color: black;\n"
-"    border-radius:15px;\n"
-"}\n"
-"\n"
-"QPushButton:hover {\n"
-"    background-color: rgb(107, 190, 160);\n"
-"}")
-        self.key_4.setObjectName("key_4")
-        self.gridLayout.addWidget(self.key_4, 2, 2, 1, 1)
-        self.key_mulitpy = QtWidgets.QPushButton(self.KeyPad)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.key_mulitpy.sizePolicy().hasHeightForWidth())
-        self.key_mulitpy.setSizePolicy(sizePolicy)
-        font = QtGui.QFont()
-        font.setPointSize(16)
-        self.key_mulitpy.setFont(font)
-        self.key_mulitpy.setStyleSheet("QPushButton{\n"
-"    background-color:rgb(191, 191, 191);\n"
-"    color: rgb(85, 85, 85);\n"
-"    border-width:1px;\n"
-"    border-color: black;\n"
-"    border-radius:15px;\n"
-"}\n"
-"\n"
-"QPushButton:hover {\n"
-"    background-color:rgb(219, 219, 219);\n"
-"}")
-        self.key_mulitpy.setObjectName("key_mulitpy")
-        self.gridLayout.addWidget(self.key_mulitpy, 1, 3, 1, 1)
         self.key_clear = QtWidgets.QPushButton(self.KeyPad)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
@@ -402,16 +293,16 @@ class Ui_MainWindow(object):
 "}")
         self.key_clear.setObjectName("key_clear")
         self.gridLayout.addWidget(self.key_clear, 0, 0, 1, 1)
-        self.key_5 = QtWidgets.QPushButton(self.KeyPad)
+        self.key_7 = QtWidgets.QPushButton(self.KeyPad)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.key_5.sizePolicy().hasHeightForWidth())
-        self.key_5.setSizePolicy(sizePolicy)
+        sizePolicy.setHeightForWidth(self.key_7.sizePolicy().hasHeightForWidth())
+        self.key_7.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
         font.setPointSize(16)
-        self.key_5.setFont(font)
-        self.key_5.setStyleSheet("QPushButton{\n"
+        self.key_7.setFont(font)
+        self.key_7.setStyleSheet("QPushButton{\n"
 "    background-color:rgb(90, 172, 146);\n"
 "    color: rgb(85, 85, 85);\n"
 "    border-color: black;\n"
@@ -421,29 +312,8 @@ class Ui_MainWindow(object):
 "QPushButton:hover {\n"
 "    background-color: rgb(107, 190, 160);\n"
 "}")
-        self.key_5.setObjectName("key_5")
-        self.gridLayout.addWidget(self.key_5, 2, 1, 1, 1)
-        self.key_8 = QtWidgets.QPushButton(self.KeyPad)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.key_8.sizePolicy().hasHeightForWidth())
-        self.key_8.setSizePolicy(sizePolicy)
-        font = QtGui.QFont()
-        font.setPointSize(16)
-        self.key_8.setFont(font)
-        self.key_8.setStyleSheet("QPushButton{\n"
-"    background-color:rgb(90, 172, 146);\n"
-"    color: rgb(85, 85, 85);\n"
-"    border-color: black;\n"
-"    border-radius:15px;\n"
-"}\n"
-"\n"
-"QPushButton:hover {\n"
-"    background-color: rgb(107, 190, 160);\n"
-"}")
-        self.key_8.setObjectName("key_8")
-        self.gridLayout.addWidget(self.key_8, 1, 1, 1, 1)
+        self.key_7.setObjectName("key_7")
+        self.gridLayout.addWidget(self.key_7, 1, 2, 1, 1)
         self.key_1 = QtWidgets.QPushButton(self.KeyPad)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
@@ -465,16 +335,16 @@ class Ui_MainWindow(object):
 "}")
         self.key_1.setObjectName("key_1")
         self.gridLayout.addWidget(self.key_1, 3, 2, 1, 1)
-        self.key_2 = QtWidgets.QPushButton(self.KeyPad)
+        self.key_decimal = QtWidgets.QPushButton(self.KeyPad)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.key_2.sizePolicy().hasHeightForWidth())
-        self.key_2.setSizePolicy(sizePolicy)
+        sizePolicy.setHeightForWidth(self.key_decimal.sizePolicy().hasHeightForWidth())
+        self.key_decimal.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
-        font.setPointSize(16)
-        self.key_2.setFont(font)
-        self.key_2.setStyleSheet("QPushButton{\n"
+        font.setPointSize(25)
+        self.key_decimal.setFont(font)
+        self.key_decimal.setStyleSheet("QPushButton{\n"
 "    background-color:rgb(90, 172, 146);\n"
 "    color: rgb(85, 85, 85);\n"
 "    border-color: black;\n"
@@ -484,19 +354,19 @@ class Ui_MainWindow(object):
 "QPushButton:hover {\n"
 "    background-color: rgb(107, 190, 160);\n"
 "}")
-        self.key_2.setObjectName("key_2")
-        self.gridLayout.addWidget(self.key_2, 3, 1, 1, 1)
-        self.key_0 = QtWidgets.QPushButton(self.KeyPad)
+        self.key_decimal.setCheckable(False)
+        self.key_decimal.setObjectName("key_decimal")
+        self.gridLayout.addWidget(self.key_decimal, 4, 2, 1, 1)
+        self.key_4 = QtWidgets.QPushButton(self.KeyPad)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.key_0.sizePolicy().hasHeightForWidth())
-        self.key_0.setSizePolicy(sizePolicy)
+        sizePolicy.setHeightForWidth(self.key_4.sizePolicy().hasHeightForWidth())
+        self.key_4.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
         font.setPointSize(16)
-        self.key_0.setFont(font)
-        self.key_0.setAutoFillBackground(False)
-        self.key_0.setStyleSheet("QPushButton{\n"
+        self.key_4.setFont(font)
+        self.key_4.setStyleSheet("QPushButton{\n"
 "    background-color:rgb(90, 172, 146);\n"
 "    color: rgb(85, 85, 85);\n"
 "    border-color: black;\n"
@@ -506,18 +376,18 @@ class Ui_MainWindow(object):
 "QPushButton:hover {\n"
 "    background-color: rgb(107, 190, 160);\n"
 "}")
-        self.key_0.setObjectName("key_0")
-        self.gridLayout.addWidget(self.key_0, 4, 0, 1, 2)
-        self.key_percentage = QtWidgets.QPushButton(self.KeyPad)
+        self.key_4.setObjectName("key_4")
+        self.gridLayout.addWidget(self.key_4, 2, 2, 1, 1)
+        self.key_negativeToggle = QtWidgets.QPushButton(self.KeyPad)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.key_percentage.sizePolicy().hasHeightForWidth())
-        self.key_percentage.setSizePolicy(sizePolicy)
+        sizePolicy.setHeightForWidth(self.key_negativeToggle.sizePolicy().hasHeightForWidth())
+        self.key_negativeToggle.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
         font.setPointSize(16)
-        self.key_percentage.setFont(font)
-        self.key_percentage.setStyleSheet("QPushButton{\n"
+        self.key_negativeToggle.setFont(font)
+        self.key_negativeToggle.setStyleSheet("QPushButton{\n"
 "    background-color:rgb(191, 191, 191);\n"
 "    color: rgb(85, 85, 85);\n"
 "    border-width:1px;\n"
@@ -528,8 +398,113 @@ class Ui_MainWindow(object):
 "QPushButton:hover {\n"
 "    background-color:rgb(219, 219, 219);\n"
 "}")
-        self.key_percentage.setObjectName("key_percentage")
-        self.gridLayout.addWidget(self.key_percentage, 0, 2, 1, 1)
+        self.key_negativeToggle.setObjectName("key_negativeToggle")
+        self.gridLayout.addWidget(self.key_negativeToggle, 0, 1, 1, 1)
+        self.key_6 = QtWidgets.QPushButton(self.KeyPad)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.key_6.sizePolicy().hasHeightForWidth())
+        self.key_6.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setPointSize(16)
+        self.key_6.setFont(font)
+        self.key_6.setStyleSheet("QPushButton{\n"
+"    background-color:rgb(90, 172, 146);\n"
+"    color: rgb(85, 85, 85);\n"
+"    border-color: black;\n"
+"    border-radius:15px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(107, 190, 160);\n"
+"}")
+        self.key_6.setObjectName("key_6")
+        self.gridLayout.addWidget(self.key_6, 2, 0, 1, 1)
+        self.key_5 = QtWidgets.QPushButton(self.KeyPad)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.key_5.sizePolicy().hasHeightForWidth())
+        self.key_5.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setPointSize(16)
+        self.key_5.setFont(font)
+        self.key_5.setStyleSheet("QPushButton{\n"
+"    background-color:rgb(90, 172, 146);\n"
+"    color: rgb(85, 85, 85);\n"
+"    border-color: black;\n"
+"    border-radius:15px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(107, 190, 160);\n"
+"}")
+        self.key_5.setObjectName("key_5")
+        self.gridLayout.addWidget(self.key_5, 2, 1, 1, 1)
+        self.key_9 = QtWidgets.QPushButton(self.KeyPad)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.key_9.sizePolicy().hasHeightForWidth())
+        self.key_9.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setPointSize(16)
+        self.key_9.setFont(font)
+        self.key_9.setStyleSheet("QPushButton{\n"
+"    background-color:rgb(90, 172, 146);\n"
+"    color: rgb(85, 85, 85);\n"
+"    border-color: black;\n"
+"    border-radius:15px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(107, 190, 160);\n"
+"}")
+        self.key_9.setObjectName("key_9")
+        self.gridLayout.addWidget(self.key_9, 1, 0, 1, 1)
+        self.key_8 = QtWidgets.QPushButton(self.KeyPad)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.key_8.sizePolicy().hasHeightForWidth())
+        self.key_8.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setPointSize(16)
+        self.key_8.setFont(font)
+        self.key_8.setStyleSheet("QPushButton{\n"
+"    background-color:rgb(90, 172, 146);\n"
+"    color: rgb(85, 85, 85);\n"
+"    border-color: black;\n"
+"    border-radius:15px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(107, 190, 160);\n"
+"}")
+        self.key_8.setObjectName("key_8")
+        self.gridLayout.addWidget(self.key_8, 1, 1, 1, 1)
+        self.key_3 = QtWidgets.QPushButton(self.KeyPad)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.key_3.sizePolicy().hasHeightForWidth())
+        self.key_3.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setPointSize(16)
+        self.key_3.setFont(font)
+        self.key_3.setStyleSheet("QPushButton{\n"
+"    background-color:rgb(90, 172, 146);\n"
+"    color: rgb(85, 85, 85);\n"
+"    border-color: black;\n"
+"    border-radius:15px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(107, 190, 160);\n"
+"}")
+        self.key_3.setObjectName("key_3")
+        self.gridLayout.addWidget(self.key_3, 3, 0, 1, 1)
         self.key_equals = QtWidgets.QPushButton(self.KeyPad)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
@@ -553,6 +528,50 @@ class Ui_MainWindow(object):
 "}")
         self.key_equals.setObjectName("key_equals")
         self.gridLayout.addWidget(self.key_equals, 4, 3, 1, 1)
+        self.key_percentage = QtWidgets.QPushButton(self.KeyPad)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.key_percentage.sizePolicy().hasHeightForWidth())
+        self.key_percentage.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setPointSize(16)
+        self.key_percentage.setFont(font)
+        self.key_percentage.setStyleSheet("QPushButton{\n"
+"    background-color:rgb(191, 191, 191);\n"
+"    color: rgb(85, 85, 85);\n"
+"    border-width:1px;\n"
+"    border-color: black;\n"
+"    border-radius:15px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color:rgb(219, 219, 219);\n"
+"}")
+        self.key_percentage.setObjectName("key_percentage")
+        self.gridLayout.addWidget(self.key_percentage, 0, 2, 1, 1)
+        self.key_0 = QtWidgets.QPushButton(self.KeyPad)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.key_0.sizePolicy().hasHeightForWidth())
+        self.key_0.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setPointSize(16)
+        self.key_0.setFont(font)
+        self.key_0.setAutoFillBackground(False)
+        self.key_0.setStyleSheet("QPushButton{\n"
+"    background-color:rgb(90, 172, 146);\n"
+"    color: rgb(85, 85, 85);\n"
+"    border-color: black;\n"
+"    border-radius:15px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(107, 190, 160);\n"
+"}")
+        self.key_0.setObjectName("key_0")
+        self.gridLayout.addWidget(self.key_0, 4, 0, 1, 2)
         self.key_add = QtWidgets.QPushButton(self.KeyPad)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
@@ -575,70 +594,50 @@ class Ui_MainWindow(object):
 "}")
         self.key_add.setObjectName("key_add")
         self.gridLayout.addWidget(self.key_add, 2, 3, 1, 1)
-        self.key_3 = QtWidgets.QPushButton(self.KeyPad)
+        self.key_mulitpy = QtWidgets.QPushButton(self.KeyPad)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.key_3.sizePolicy().hasHeightForWidth())
-        self.key_3.setSizePolicy(sizePolicy)
+        sizePolicy.setHeightForWidth(self.key_mulitpy.sizePolicy().hasHeightForWidth())
+        self.key_mulitpy.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
         font.setPointSize(16)
-        self.key_3.setFont(font)
-        self.key_3.setStyleSheet("QPushButton{\n"
-"    background-color:rgb(90, 172, 146);\n"
+        self.key_mulitpy.setFont(font)
+        self.key_mulitpy.setStyleSheet("QPushButton{\n"
+"    background-color:rgb(191, 191, 191);\n"
 "    color: rgb(85, 85, 85);\n"
+"    border-width:1px;\n"
 "    border-color: black;\n"
 "    border-radius:15px;\n"
 "}\n"
 "\n"
 "QPushButton:hover {\n"
-"    background-color: rgb(107, 190, 160);\n"
+"    background-color:rgb(219, 219, 219);\n"
 "}")
-        self.key_3.setObjectName("key_3")
-        self.gridLayout.addWidget(self.key_3, 3, 0, 1, 1)
-        self.key_7 = QtWidgets.QPushButton(self.KeyPad)
+        self.key_mulitpy.setObjectName("key_mulitpy")
+        self.gridLayout.addWidget(self.key_mulitpy, 1, 3, 1, 1)
+        self.key_subtract = QtWidgets.QPushButton(self.KeyPad)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.key_7.sizePolicy().hasHeightForWidth())
-        self.key_7.setSizePolicy(sizePolicy)
+        sizePolicy.setHeightForWidth(self.key_subtract.sizePolicy().hasHeightForWidth())
+        self.key_subtract.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
-        font.setPointSize(16)
-        self.key_7.setFont(font)
-        self.key_7.setStyleSheet("QPushButton{\n"
-"    background-color:rgb(90, 172, 146);\n"
+        font.setPointSize(20)
+        self.key_subtract.setFont(font)
+        self.key_subtract.setStyleSheet("QPushButton{\n"
+"    background-color:rgb(191, 191, 191);\n"
 "    color: rgb(85, 85, 85);\n"
+"    border-width:1px;\n"
 "    border-color: black;\n"
 "    border-radius:15px;\n"
 "}\n"
 "\n"
 "QPushButton:hover {\n"
-"    background-color: rgb(107, 190, 160);\n"
+"    background-color:rgb(219, 219, 219);\n"
 "}")
-        self.key_7.setObjectName("key_7")
-        self.gridLayout.addWidget(self.key_7, 1, 2, 1, 1)
-        self.key_decimal = QtWidgets.QPushButton(self.KeyPad)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.key_decimal.sizePolicy().hasHeightForWidth())
-        self.key_decimal.setSizePolicy(sizePolicy)
-        font = QtGui.QFont()
-        font.setPointSize(25)
-        self.key_decimal.setFont(font)
-        self.key_decimal.setStyleSheet("QPushButton{\n"
-"    background-color:rgb(90, 172, 146);\n"
-"    color: rgb(85, 85, 85);\n"
-"    border-color: black;\n"
-"    border-radius:15px;\n"
-"}\n"
-"\n"
-"QPushButton:hover {\n"
-"    background-color: rgb(107, 190, 160);\n"
-"}")
-        self.key_decimal.setCheckable(False)
-        self.key_decimal.setObjectName("key_decimal")
-        self.gridLayout.addWidget(self.key_decimal, 4, 2, 1, 1)
+        self.key_subtract.setObjectName("key_subtract")
+        self.gridLayout.addWidget(self.key_subtract, 3, 3, 1, 1)
         self.Container_layout.addWidget(self.KeyPad)
         self.verticalLayout.addWidget(self.Container)
         MainWindow.setCentralWidget(self.centralwidget)
@@ -653,25 +652,25 @@ class Ui_MainWindow(object):
         self.MinimizeWin.setText(_translate("MainWindow", "-"))
         self.MaximizeWin.setText(_translate("MainWindow", "+"))
         self.Screen.setText(_translate("MainWindow", "0"))
-        self.key_9.setText(_translate("MainWindow", "9"))
-        self.key_divide.setText(_translate("MainWindow", "÷"))
-        self.key_6.setText(_translate("MainWindow", "6"))
-        self.key_subtract.setText(_translate("MainWindow", "-"))
-        self.key_negativeToggle.setText(_translate("MainWindow", "+/-"))
-        self.key_4.setText(_translate("MainWindow", "4"))
-        self.key_mulitpy.setText(_translate("MainWindow", "x"))
-        self.key_clear.setText(_translate("MainWindow", "AC"))
-        self.key_5.setText(_translate("MainWindow", "5"))
-        self.key_8.setText(_translate("MainWindow", "8"))
-        self.key_1.setText(_translate("MainWindow", "1"))
         self.key_2.setText(_translate("MainWindow", "2"))
-        self.key_0.setText(_translate("MainWindow", "0"))
-        self.key_percentage.setText(_translate("MainWindow", "%"))
-        self.key_equals.setText(_translate("MainWindow", "="))
-        self.key_add.setText(_translate("MainWindow", "+"))
-        self.key_3.setText(_translate("MainWindow", "3"))
+        self.key_divide.setText(_translate("MainWindow", "÷"))
+        self.key_clear.setText(_translate("MainWindow", "AC"))
         self.key_7.setText(_translate("MainWindow", "7"))
+        self.key_1.setText(_translate("MainWindow", "1"))
         self.key_decimal.setText(_translate("MainWindow", "."))
+        self.key_4.setText(_translate("MainWindow", "4"))
+        self.key_negativeToggle.setText(_translate("MainWindow", "+/-"))
+        self.key_6.setText(_translate("MainWindow", "6"))
+        self.key_5.setText(_translate("MainWindow", "5"))
+        self.key_9.setText(_translate("MainWindow", "9"))
+        self.key_8.setText(_translate("MainWindow", "8"))
+        self.key_3.setText(_translate("MainWindow", "3"))
+        self.key_equals.setText(_translate("MainWindow", "="))
+        self.key_percentage.setText(_translate("MainWindow", "%"))
+        self.key_0.setText(_translate("MainWindow", "0"))
+        self.key_add.setText(_translate("MainWindow", "+"))
+        self.key_mulitpy.setText(_translate("MainWindow", "x"))
+        self.key_subtract.setText(_translate("MainWindow", "-"))
 
 
 if __name__ == "__main__":
